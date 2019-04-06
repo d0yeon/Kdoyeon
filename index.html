@@ -13,13 +13,55 @@
 
  <title>Kdoyeon</title>
  <meta charset="utf-8">
+ <style>
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  ul{
+  border-right: 1px solid gray;
+  width:130px
+  }
+
+  .saw {
+  color: gray;
+   }
+  h1 {
+    font-size:50px;
+    text-align: center;
+    padding: 20px;
+    margin:0;
+  }
+
+  .center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #grid {
+    display:grid;
+    grid-template-columns: 150px 1fr
+  }
+  @media(max-width:700px){
+    #grid{
+      display:block;
+    }
+    ul{
+    border-right: none;
+    }
+   }
+</style>
 </head>
 <body>
-  <h1><a href="index.html">HELLO</a></h1>
- <ul>
- <li><a href="1.html">Kangdoyeon</a></li>
- <li><a href="2.html">Portfolio</a></li>
- <li><a href="3.html">Favorite</a></li>
- </ul>
- <img src="doyeon.png"width=70%>
+  <h1><a <img src="3.png"width=10% class="center"; href="index.html"class="saw"></a></h1>
+  <div id="grid">
+   <ul>
+   <li><a href="1.html"class="saw">KangDOYEON</a></li>
+   <li><a href="2.html"class="saw">Portfolio</a></li>
+   <li><a href="3.html"class="saw">Favorite</a></li>
+  </ul>
+    <div>
+   <img src="doyeon.png"width=70% class="center">
+   </div>
+</div>
 </body>
